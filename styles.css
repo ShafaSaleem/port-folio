@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+.logo span {
+    color: #000;
+}
+.navigation {
+    margin-left: -300px;
+}
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+.navigation a:hover {
+    color: #000;
+}
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #000;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-talk:hover {
+    color: #000;
+    background: transparent;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('bck.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+.content {
+    max-width: 500px;
+    color: #555;
+}
+.content h2 {
+    font-size: 3em;
+}
+.content h2 span {
+    color: #000;
+}
+.content h4 {
+    font-size: 2em;
+}
+.content p {
+    padding: 10px 0 40px 0;
+    color: #000;
+    font-weight: 500;
+}
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #000;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-group a:hover:nth-child(1) {
+    color: #000;
+    background: transparent;
+}
+.btn-group a:nth-child(2) {
+    color: #000;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #000;
+}
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #000;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #000;
+    transition: .3s;
+}
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons a i {
+    color: #fff;
+}
+.image-corner {
+    position: fixed;
+    bottom: 100px;
+    right: 200px;
+}
+
+.image-corner img {
+    width: 500px; /* Adjust the size of the image */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #fff; /* Add a border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+}
+.image-corner:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+@media only screen and (max-width: 768px) {
+    /* Styles for smaller devices */
+    header {
+        padding: 15px 50px;
+    }
+    .navigation {
+        margin-left: 0;
+    }
+    .content {
+        padding: 0 20px;
+    }
+    .image-corner {
+        bottom: 50px;
+        right: 20px;
+    }
+    .image-corner img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Styles for larger devices */
+    .content {
+        max-width: 700px;
+    }
+}
